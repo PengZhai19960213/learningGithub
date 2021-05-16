@@ -1,0 +1,20 @@
+QT += testlib
+QT += gui
+QT+=widgets
+CONFIG += qt warn_on depend_includepath testcase
+
+TEMPLATE = app
+
+SOURCES +=  tst_test_mybutton.cpp \
+    ../winApp/mainwindow.cpp \
+    ../winApp/mybutton.cpp
+
+SUBDIRS += \
+    ../winApp/winApp.pro
+
+FORMS += \
+    ../winApp/mainwindow.ui
+
+HEADERS += \
+    ../winApp/mainwindow.h \
+    ../winApp/mybutton.h
