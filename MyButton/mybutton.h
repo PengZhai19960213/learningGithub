@@ -12,6 +12,7 @@ class MyButton : public QPushButton
     Q_OBJECT
 
 public:
+    void add(int a,int b);
     MyButton(QPushButton *parent = nullptr);
 void MouseReleaseEvent(QMouseEvent *event);
     ~MyButton();
